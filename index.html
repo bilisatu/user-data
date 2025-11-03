@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>USER INPUT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>CREATE YOUR PROFILE</h1>
+
+            <div class="input-section">
+
+                <div class="form-group">
+                    <label for="nameInput">Your Name:</label>
+                    <input type="text" id="nameInput" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="ageInput">Your Age:</label>
+                    <input type="number" id="ageInput" placeholder="Enter your age">
+                </div>
+
+                <div class="form-group">
+                    <label for="colorInput">Favourite Color:</label>
+                    <select id="colorInput">
+                        <option value="blue">Blue</option>
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="purple">Purple</option>
+                        <option value="orange">Orange</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="bioInput">Your Bio:</label>
+                    <textarea id="bioInput" placeholder="Tell us about yourself..."></textarea>
+                </div>
+
+                <button id="generateBtn">GENERATE PROFILE</button>
+                <button id="clearBtn">CLEAR ALL</button>
+                </div>
+
+                <div class="output-section">
+                    <h2>YOUR PROFILE CARD</h2>
+                    <div id="profileCard" class="profile-card">
+                        <p>Fill the form and click GENERATE to see your profile!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
