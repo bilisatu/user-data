@@ -1,0 +1,123 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(-45deg, #425eda, #1e9e13, #f25d06);
+    padding:40px;
+    min-height:100vh;
+    animation: form 5s infinite;
+    background-size: 500% 100%;
+}
+
+@keyframes form {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    max-width:800px;
+    margin:0 auto;
+}
+
+h1 {
+    text-align:center;
+    color:white;
+    margin-bottom:30px;
+    font-size:2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.input-section {
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    margin-bottom:30px;
+}
+
+.form-group {
+    margin-bottom:20px;
+}
+
+label {
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#333;
+}
+
+input, select, textarea {
+    width:100%;
+    padding:12px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color:#667eea;
+    outline:none;
+}
+
+textarea {
+    height:100px;
+    resize:vertical;
+}
+
+button {
+    padding: 15px 30px;
+    margin:10px 10px 10px 0;
+    font-size:16px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition: all 0.3s;
+    font-weight:bold;
+}
+
+#generateBtn {
+    background: #4CAF50;
+    color:white;
+}
+
+#clearBtn {
+    background:#ff4757;
+    color:white;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.output-section {
+    background: white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    margin-bottom:30px;
+}
+
+.profile-card {
+    padding:25px;
+    border-radius:10px;
+    border: 3px solid #667eea;
+    background:#f8f9fa;
+    min-height:150px;
+    transition: all 0.3s;
+}
+
